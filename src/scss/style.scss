@@ -2,8 +2,9 @@
 @import "vars";
 @import "reset";
 body {
-    font-family: Roboto, sans-serif;
+    font-family: "Roboto";
     font-weight: 400;
+    font-style: normal;
     white-space: nowrap;
 }
 
@@ -13,11 +14,22 @@ body {
     padding: 0 20px;
 }
 
+.dropdown-fix {
+    height: 30px;
+    width: 100%;
+    background-color: rgba(#fff, 0%);
+    // background-color: red;
+    position: absolute;
+    right: 0;
+    z-index: 999;
+}
+
 .dropdown {
     display: none;
     position: absolute;
     margin-top: 4px;
     background-color: $addBlue;
+    letter-spacing: 1px;
     top: 60px;
     left: 0;
     border-radius: 0 10px 10px 10px;
@@ -26,7 +38,7 @@ body {
         text-decoration: none;
         font-size: 18px;
         color: $white;
-        padding: 16px 25px;
+        padding: 16px 16px;
         border-bottom: 1px solid #4c5361;
         // margin: 0 25px;
     }
@@ -41,7 +53,7 @@ body {
         }
     }
     & a:last-child {
-        // padding-bottom: 25px;
+        padding-bottom: 20px;
         border: none;
         &:hover {
             border-radius: 0 0 10px 10px;
@@ -118,16 +130,27 @@ body {
 }
 
 .primary-button {
+    cursor: pointer;
+    transition: 0.3s ease;
     font-size: 18px;
-    //font-weight: bold;
     letter-spacing: 1px;
     color: $white;
     height: 60px;
     padding: 0 40px;
-    background: linear-gradient(282.03deg, #2c84eb 8.67%, #1b59a0 99.14%);
+    // background: linear-gradient(282.03deg, #2c84eb 8.67%, #1b59a0 99.14%);
     box-shadow: 0px 0px 16px rgba(84, 160, 249, 0.5);
+    background: $blue;
     border-radius: 30px;
     border: 0;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+}
+
+.primary-button:hover {
+    background: $darkBlue;
+    box-shadow: none;
+    // color: $white;
+    // outline: 2px solid $darkBlue;
 }
 
 object {
