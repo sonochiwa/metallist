@@ -1,14 +1,15 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="css/style.min.css">
-  <title>Главная</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.min.css">
+    <title>Главная</title>
 </head>
 
 <body>
+
     <header class="header">
     <div class="container">
         <div class="header__top">
@@ -60,128 +61,166 @@
     </div>
 </header>
 
+<div class="burger">
+    <button class="burger__btn">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    <nav class="burger__nav">
+        <ul>
+            <li><a href="#">Главная</a></li>
+            <li><a href="#">Продукция</a></li>
+            <li><a href="#">Новости</a></li>
+            <li><a href="#">Доставка</a></li>
+            <li><a href="#">О нас</a></li>
+        </ul>
+    </nav>
+</div>
+
     <main>
+
+        <!-- <div class="logo">
+            <img src="images/logo.png" alt="logo">
+        </div> -->
+
+        <!-- slider -->
         <div class="container">
-            <section class="slider">
-                <p class="slider__text">Качество, наработанное годами</p>
-            </section>
-        </div>
+    <section class="slider">
+        <p class="slider__text">Качество, наработанное годами</p>
+    </section>
+</div>
 
-
+        <!-- mom -->
         <div class="container">
-            <section class="mom">
-                <div class="mom__item">
-                    <p class="primary-text">Предприятие имеет производственные площади, оснащенные грузоподъемным и сварочным оборудованием, оборудованием для <span class="text-medium"> механической обработки металла</span>, закрытые и открытые складские помещения с подъездными
-                        путями железнодорожного транспорта.</p>
-                </div>
-                <div class="mom__item">
-                    <div class="mom__item-img"></div>
-                </div>
-            </section>
-
+    <section class="mom">
+        <div class="mom__item">
+            <p class="primary-text">Предприятие имеет производственные площади, оснащенные грузоподъемным и сварочным оборудованием, оборудованием для <span class="text-medium"> механической обработки металла</span>, закрытые и открытые складские помещения с подъездными путями
+                железнодорожного транспорта.</p>
         </div>
+        <div class="mom__item">
+            <div class="mom__item-img"></div>
+        </div>
+    </section>
+</div>
 
+        <!-- advantages -->
+        
+
+        <!-- about -->
         <div class="container">
-            <hr>
-            <section class="advantages">
-                <h2>Производство металлоформ для ЖБИ и металлоконструкций</h2>
-                <div class="advantages-inner">
-                    <div class="advantages__item">
-                        <div class="advantages__item-img"><img src="images/img-1.png" alt=""></div>
-                        <div class="advantages__item-text"></div>
-                    </div>
-                    <div class="advantages__item">
-                        <div class="advantages__item-img"> <img src="images/img-2.png" alt=""></div>
-                        <div class="advantages__item-text"></div>
-                    </div>
-                    <div class="advantages__item">
-                        <div class="advantages__item-img"> <img src="images/img-3.png" alt=""></div>
-                        <div class="advantages__item-text"></div>
-                    </div>
-                    <div class="advantages__item">
-                        <div class="advantages__item-img"> <img src="images/img-4.png" alt=""></div>
-                        <div class="advantages__item-text"></div>
-                    </div>
-                </div>
-            </section>
-
+    <hr>
+    <section class="about">
+        <h2>О заводе</h2>
+        <p class="primary-text">Общество с ограниченной ответственностью «Завод Металлооснастки» образовано в 2000 году на базе завода Металлист, который ранее именовался Николаевским ремонтно-механическим заводом и являлся одним из старейших предприятий в стройиндустрии.</p>
+        <div class="blue-link">
+            <a class="link-text" href="#">Узнать больше</a>
+            <object type="image/svg+xml" data="images/arrow-right.svg"></object>
         </div>
+    </section>
+</div>
 
+        <!-- production -->
         <div class="container">
-            <hr>
-            <section class="about">
-                <h2>О заводе</h2>
-                <p class="primary-text">Общество с ограниченной ответственностью «Завод Металлооснастки» образовано в 2000 году на базе завода Металлист, который ранее именовался Николаевским ремонтно-механическим заводом и являлся одним из старейших предприятий в стройиндустрии.</p>
-                <div class="blue-link">
-                    <a class="link-text" href="#">Узнать больше</a>
-                    <object type="image/svg+xml" data="images/arrow-right.svg"></object>
-                </div>
-            </section>
-        </div>
-
-        <div class="container">
-            <hr>
-            <section class="production">
-                <h2>Что мы изготавливаем?</h2>
-                <div class="production__item-wrapper">
-                    <div class="production__item">
-                        <div class="production__item-image"></div>
-                        <div class="production__item-text">Гражданское строительство</div>
-                    </div>
-                    <div class="production__item">
-                        <div class="production__item-image"></div>
-                        <div class="production__item-text">Нефтегазовая промышленность</div>
-                    </div>
-                    <div class="production__item">
-                        <div class="production__item-image"></div>
-                        <div class="production__item-text">Железнодорожное строительство</div>
-                    </div>
-                </div>
-
-                <div class="production__link">
-                    <div class="blue-link">
-                        <a class="link-text" href="#">Вся продукция</a>
-                        <object type="image/svg+xml" data="images/arrow-right.svg"></object>
-                    </div>
-                </div>
-            </section>
-        </div>
-
-
-
-        <section class="order">
-            <div class="container">
-                <div class="order-inner">
-                    <div class="order-inner__h">ОСТАВИТЬ ЗАКАЗ</div>
-                    <p class="order-inner__text">Напишите нам информацию о заказе, а мы с Вами свяжемся.</p>
-                    <form action="#" class="order-inner__form">
-                        <div class="order-inner__form-inputs">
-                            <label for="input-1">Ваше имя<input id="input-1" type="text" class="order-inner__input"></label>
-                            <label for="input-2">Ваш телефон<input id="input-2" type="text" class="order-inner__input"></label>
-                            <label for="input-3">Email адрес<input id="input-3" type="text" class="order-inner__input"></label>
-                        </div>
-                        <label for="textarea">Ваше сообщение<textarea name="" id="textarea" cols="30" rows="10" class="order-inner__text-area"></textarea></label>
-                        <button class="small-btn">Отправить</button>
-                    </form>
-                </div>
+    <hr>
+    <section class="production">
+        <h2>Что мы изготавливаем?</h2>
+        <div class="production__item-wrapper">
+            <div class="production__item">
+                <div class="production__item-image"></div>
+                <div class="production__item-text">Гражданское строительство</div>
             </div>
-        </section>
-
-
+            <div id="advantages__item-hidden-2" class="production__item">
+                <div class="production__item-image"></div>
+                <div class="production__item-text">Нефтегазовая промышленность</div>
+            </div>
+            <div id="advantages__item-hidden" class="production__item">
+                <div class="production__item-image"></div>
+                <div class="production__item-text">Железнодорожное строительство</div>
+            </div>
         </div>
+
+        <div class="production__link">
+            <div class="blue-link">
+                <a class="link-text" href="#">Вся продукция</a>
+                <object type="image/svg+xml" data="images/arrow-right.svg"></object>
+            </div>
+        </div>
+    </section>
+</div>
+
+        <!-- order -->
+        <section class="order">
+    <div class="container">
+        <div class="order-inner">
+            <div class="order-inner__h">ОСТАВИТЬ ЗАКАЗ</div>
+            <p class="order-inner__text">Напишите нам информацию о заказе и мы с Вами свяжемся.</p>
+            <form action="#" class="order-inner__form">
+                <div class="order-inner__form-inputs">
+                    <label for="input-1">Ваше имя<input id="input-1" type="text" class="order-inner__input"></label>
+                    <label for="input-2">Ваш телефон<input id="input-2" type="text" class="order-inner__input"></label>
+                    <label for="input-3">Email адрес<input id="input-3" type="text" class="order-inner__input"></label>
+                </div>
+                <label for="textarea">Ваше сообщение<textarea name="" id="textarea" cols="30" rows="10" class="order-inner__text-area"></textarea></label>
+                <button class="small-btn">Отправить</button>
+            </form>
+        </div>
+    </div>
+</section>
+
+
+
+
     </main>
 
     <footer class="footer">
-    <div class="container">
-        <div class="go-back">
 
-            <a href="#" class="go-back__text">ВЕРНУТЬСЯ<object type="image/svg+xml" data="images/arrow-top.svg"></object></a>
+    <div class="footer-top">
+        <div class="container">
+            <div class="go-back">
+
+                <a href="#" class="go-back__text">ВЕРНУТЬСЯ<object type="image/svg+xml" data="images/arrow-top.svg"></object></a>
+            </div>
+            <div class="footer-info">
+                <ul class="footer-top__list">
+                    <li class="footer-top__list-header">КОНТАКТЫ</li>
+                    <li class="footer-top__list-item">644085, г. Омск пр. Мира, д. 185, корп. 3</li>
+                    <li class="footer-top__list-item">metallist-2000@yandex.ru</li>
+                    <li class="footer-top__list-item">8 (3812) 26-74-89</li>
+                    <li class="footer-top__list-item">8 (3812) 26-76-69</li>
+                </ul>
+                <ul class="footer-top__list">
+                    <li class="footer-top__list-header">Социальные сети</li>
+                    <li class="footer-top__list-item"><a href="https://www.instagram.com">Instagram</a></li>
+                    <li class="footer-top__list-item"><a href="https://vk.com/">Вконтакте</a></li>
+                </ul>
+            </div>
+
+        </div>
+
+    </div>
+    <div class="footer-bottom__wrapper">
+        <div class="container">
+            <div class="footer-bottom">
+                <div class="footer-bottom__item">ООО «Завод Металлооснастки» © 2022 </div>
+                <div class="footer-bottom__item">Создание сайта - SQUOZ DIGITAL</div>
+            </div>
         </div>
     </div>
 
 
+
+    </div>
+
+
+
+
+
 </footer>
     <script src="js/app.min.js"></script>
+
 </body>
+
+
 
 </html>
