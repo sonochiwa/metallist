@@ -1,7 +1,9 @@
+@import "bootstrap-grid.min";
 @import "fonts";
 @import "vars";
 @import "reset";
 @import "burger";
+@import "production";
 html {
     scroll-behavior: smooth;
     -webkit-overflow-scrolling: touch; //safari skroll
@@ -606,6 +608,12 @@ section {
 
 #modal-window {
     display: none;
+}
+
+.row {
+    gap: 10px;
+    --bs-gutter-x: 0;
+    padding: 0;
 }
 
 @import "media";

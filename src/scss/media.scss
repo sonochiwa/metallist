@@ -261,3 +261,36 @@
         margin-top: 30px;
     }
 }
+
+@media (max-width: 1289px) {
+    .production-cards__item {
+        width: 320px;
+        height: 320px;
+    }
+}
+
+@media (max-width: 1179px) {
+    .production-cards__item {
+        width: 280px;
+        height: 280px;
+    }
+}
+
+@media (max-width: 928px) {
+    .production-cards {
+        // width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    .production-cards__item {
+        margin: 15px 20px;
+    }
+}
+
+@media (max-width: 717px) {
+    .production-cards__item {
+        max-width: 400px;
+        height: 400px;
+        width: 100%;
+    }
+}

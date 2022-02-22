@@ -1,0 +1,39 @@
+.production {
+    &-inner {
+        width: 100%;
+    }
+    &-h {
+        padding: 0px 0 40px;
+        font-size: 24px;
+        font-weight: 500;
+    }
+    &-cards {
+        display: flex;
+        justify-content: space-between;
+        &__item {
+            display: flex;
+            flex-direction: column;
+            width: 280px;
+            height: 280px;
+            outline: 1px solid #c4c4c4;
+            border-radius: 7px;
+            margin-bottom: 30px;
+            &-img {
+                height: 100%;
+                border-radius: 7px 7px 0 0;
+                background-color: #e2e2e2;
+            }
+            &-text {
+                display: flex;
+                padding: 20px 0;
+                justify-content: center;
+                width: 100%;
+            }
+            &:hover {
+                border: 0;
+                outline: 2px solid $blue;
+                background-color: #fff;
+            }
+        }
+    }
+}
