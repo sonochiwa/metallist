@@ -1,4 +1,10 @@
 //xl content 1140px pc
+@media (max-width: 1585px) {
+    .logo {
+        display: none;
+    }
+}
+
 @media (max-width: 1200px) {
     .container {
         max-width: 1200px;
@@ -10,9 +16,6 @@
                 font-size: 14px;
             }
         }
-    }
-    .logo {
-        display: none;
     }
     .mom {
         flex-direction: column;
@@ -252,6 +255,7 @@
     .footer-info {
         display: flex;
         flex-direction: column;
+        padding-left: 30px;
     }
     .footer-top__list:last-child {
         margin-top: 30px;

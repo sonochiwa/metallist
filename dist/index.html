@@ -80,9 +80,9 @@
 
     <main>
 
-        <!-- <div class="logo">
+        <div class="logo">
             <img src="images/logo.png" alt="logo">
-        </div> -->
+        </div>
 
         <!-- slider -->
         <div class="container">
@@ -105,7 +105,31 @@
 </div>
 
         <!-- advantages -->
-        
+        <div class="container">
+    <hr>
+    <section class="advantages">
+        <h2>Производство металлоформ для ЖБИ и металлоконструкций</h2>
+        <div class="advantages-inner">
+            <div class="advantages__item">
+                <div class="advantages__item-img"><img src="images/img-1.png" alt=""></div>
+                <div class="advantages__item-text">50 лет в отрасли</div>
+            </div>
+            <div class="advantages__item">
+                <div class="advantages__item-img"> <img src="images/img-2.png" alt=""></div>
+                <div class="advantages__item-text">8.5 тыс. м² производственные площади
+                </div>
+            </div>
+            <div class="advantages__item">
+                <div class="advantages__item-img"> <img src="images/img-3.png" alt=""></div>
+                <div class="advantages__item-text">Контроль ОТК</div>
+            </div>
+            <div class="advantages__item">
+                <div class="advantages__item-img"> <img src="images/img-4.png" alt=""></div>
+                <div class="advantages__item-text">Гарантии производителя</div>
+            </div>
+        </div>
+    </section>
+</div>
 
         <!-- about -->
         <div class="container">
@@ -168,36 +192,79 @@
     </div>
 </section>
 
+        <!-- order-modal -->
+        <div id="modal-window" tabindex='-1'>
+    <div class="order-modal-wrapper">
+        <div class="add-wrapper">
+            <div class="order-modal">
+                <section class="order">
+                    <div class="container">
+                        <div class="order-inner">
+                            <div class="order-inner__h">ОСТАВИТЬ ЗАКАЗ</div>
+                            <p class="order-inner__text">Напишите нам информацию о заказе и мы с Вами свяжемся.</p>
+                            <form action="#" class="order-inner__form">
+                                <div class="order-inner__form-inputs">
+                                    <label for="input-1">Ваше имя<input id="input-1" type="text" class="order-inner__input"></label>
+                                    <label for="input-2">Ваш телефон<input id="input-2" type="text" class="order-inner__input"></label>
+                                    <label for="input-3">Email адрес<input id="input-3" type="text" class="order-inner__input"></label>
+                                </div>
+                                <label for="textarea">Ваше сообщение<textarea name="" id="textarea" cols="30" rows="10" class="order-inner__text-area"></textarea></label>
+                                <button class="small-btn">Отправить</button>
+                            </form>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
+</div>
 
 
 
     </main>
 
     <footer class="footer">
-
     <div class="footer-top">
         <div class="container">
             <div class="go-back">
-
                 <a href="#" class="go-back__text">ВЕРНУТЬСЯ<object type="image/svg+xml" data="images/arrow-top.svg"></object></a>
             </div>
             <div class="footer-info">
                 <ul class="footer-top__list">
+
                     <li class="footer-top__list-header">КОНТАКТЫ</li>
-                    <li class="footer-top__list-item">644085, г. Омск пр. Мира, д. 185, корп. 3</li>
-                    <li class="footer-top__list-item">metallist-2000@yandex.ru</li>
-                    <li class="footer-top__list-item">8 (3812) 26-74-89</li>
-                    <li class="footer-top__list-item">8 (3812) 26-76-69</li>
+
+                    <div class="mini-wrapper">
+                        <object type="image/svg+xml" data="images/point.svg"></object>
+                        <li class="footer-top__list-item"><span>644085 г. Омск<br> пр. Мира  д. 185, корп. 3</span></li>
+                    </div>
+
+                    <div class="mini-wrapper">
+                        <object type="image/svg+xml" data="images/mail.svg"></object>
+                        <li class="footer-top__list-item"><span></span>metallist-2000@yandex.ru</span>
+                        </li>
+                    </div>
+
+                    <div class="mini-wrapper">
+                        <object type="image/svg+xml" data="images/phone.svg"></object>
+                        <li class="footer-top__list-item"><span></span>8 (3812) 26-74-89</span>
+                        </li>
+                    </div>
+
+                    <div class="mini-wrapper">
+                        <object type="image/svg+xml" data="images/phone.svg"></object>
+                        <li class="footer-top__list-item"><span></span>8 (3812) 26-76-69</span>
+                        </li>
+                    </div>
+
+
                 </ul>
                 <ul class="footer-top__list">
                     <li class="footer-top__list-header">Социальные сети</li>
-                    <li class="footer-top__list-item"><a href="https://www.instagram.com">Instagram</a></li>
-                    <li class="footer-top__list-item"><a href="https://vk.com/">Вконтакте</a></li>
+                    <li id="inst" class="footer-top__list-item"><a href="https://www.instagram.com">Instagram</a></li>
                 </ul>
             </div>
-
         </div>
-
     </div>
     <div class="footer-bottom__wrapper">
         <div class="container">
@@ -207,15 +274,6 @@
             </div>
         </div>
     </div>
-
-
-
-    </div>
-
-
-
-
-
 </footer>
     <script src="js/app.min.js"></script>
 
