@@ -8,3 +8,4 @@ const swiper = new Swiper()
 
 import './modules/burger.js'
 import './modules/modal.js'
+import './modules/bootstrap.js'
