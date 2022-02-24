@@ -6,6 +6,5 @@ import Swiper, { Navigation, Pagination } from 'swiper'
 
 const swiper = new Swiper()
 
-import './modules/header.js'
 import './modules/burger.js'
 import './modules/modal.js'

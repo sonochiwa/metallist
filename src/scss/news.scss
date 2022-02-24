@@ -3,6 +3,10 @@
     flex-direction: column;
 }
 
+.news__item-info-wrapper:hover .news__item-h {
+    text-decoration: underline;
+}
+
 .news {
     margin: 0 auto;
     &__item {
@@ -10,9 +14,12 @@
         flex-direction: column;
         max-width: 700px;
         box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.15);
-        margin-bottom: 20px;
+        margin-bottom: 40px;
         &-info-wrapper {
             padding: 35px 25px 0px;
+            & :hover {
+                cursor: pointer;
+            }
         }
         border-radius: 15px;
         &-h {
@@ -37,6 +44,7 @@
             border-radius: 0 0 15px 15px;
             display: flex;
             width: 100%;
+            // background: #00000033;
             img {
                 width: 100%;
             }
