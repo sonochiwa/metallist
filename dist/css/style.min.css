@@ -321,7 +321,6 @@ input {
 .row {
   display: grid;
   gap: 26px;
-  grid-template-rows: 1fr 1fr 1fr;
   grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 
@@ -416,6 +415,27 @@ input {
   margin-bottom: 15px;
 }
 
+.price-sec {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.price-sec__item {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+.price-sec__text {
+  max-width: 900px;
+  text-align: center;
+  width: 800px;
+  font-size: 21px;
+  color: #434955;
+  font-weight: 300;
+  line-height: 145%;
+  width: 100%;
+}
+
 .burger {
   position: absolute;
   z-index: 999;
@@ -504,9 +524,18 @@ input {
 html {
   scroll-behavior: smooth;
   -webkit-overflow-scrolling: touch;
+  height: 100%;
+}
+
+main {
+  height: 100%;
 }
 
 body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
   cursor: default;
   font-family: "Roboto";
   font-weight: 400;
@@ -1133,7 +1162,6 @@ section {
   .row {
     display: grid;
     gap: 26px;
-    grid-template-rows: 1fr 1fr 1fr;
     grid-template-columns: 1fr 1fr 1fr;
   }
 

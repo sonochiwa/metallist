@@ -1,0 +1,22 @@
+.price-sec {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    // width: 800px;
+    // width: 100%;
+    &__item {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+    }
+    &__text {
+        max-width: 900px;
+        text-align: center;
+        width: 800px;
+        font-size: 21px;
+        color: $darkBlue;
+        font-weight: 300;
+        line-height: 145%;
+        width: 100%;
+    }
+}
