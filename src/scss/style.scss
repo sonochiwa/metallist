@@ -5,6 +5,7 @@
 @import "bootstrap";
 @import "production";
 @import "news";
+@import "about";
 @import "payment";
 @import "contacts";
 @import "partners";
@@ -12,22 +13,16 @@
 @import "price";
 @import "burger";
 
+#squoz {
+    transition: 0.2s ease;
+    color: rgb(255, 255, 255);
+}
+
 html {
     scroll-behavior: smooth;
     -webkit-overflow-scrolling: touch; //safari skroll
     height: 100%;
 }
-
-// footer {
-//     display: flex;
-// }
-
-// main {
-//     // justify-content: flex-start;
-//     // position: relative;
-//     height: 100%;
-//     // bottom: 0;
-// }
 
 body {
     display: flex;
@@ -91,6 +86,14 @@ h3 {
     padding: 0px 0 40px;
     font-size: 24px;
     font-weight: 500;
+}
+
+h4 {
+    padding: 0px 0 20px;
+    font-size: 24px;
+    font-weight: 500;
+    // text-align: center;
+    color: #2575cf;
 }
 
 .link-text {
@@ -310,36 +313,6 @@ section {
     }
 }
 
-.about {
-    &-inner {
-        display: block;
-        flex-direction: row;
-        justify-content: space-between;
-        width: 100%;
-        &__text {
-            text-align: justify;
-            font-size: 21px;
-            color: $darkBlue;
-            font-weight: 300;
-            line-height: 135%;
-        }
-        &__img {
-            float: right;
-            margin-left: 40px;
-            width: 500px;
-            height: 400px;
-            background-color: #c4c4c4;
-            border-radius: 15px;
-        }
-        &__owner {
-            display: inline-block;
-            text-align: right;
-            width: 100%;
-            white-space: nowrap;
-        }
-    }
-}
-
 .primary-text {
     width: 100%;
     font-size: 26px;
@@ -385,7 +358,7 @@ section {
         display: flex;
         &-img {
             display: flex;
-            background-color: #c4c4c4;
+            background-color: #e6e6e6;
             min-width: 500px;
             width: 200px;
             width: 100%;
@@ -411,18 +384,6 @@ section {
     }
 }
 
-.about {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-}
-
-.about > .primary-text {
-    max-width: 900px;
-}
-
 .advantages-inner {
     display: flex;
     // padding: 0 140px;
@@ -445,7 +406,7 @@ section {
         width: 100%;
         min-height: 290px;
         &-image {
-            background-color: #c4c4c4;
+            background-color: #e6e6e6;
             border-radius: 15px 15px 0 0;
             height: 100%;
         }
@@ -468,7 +429,7 @@ section {
         align-items: center;
         padding: 30px 20px;
         background-color: white;
-        border: 2px solid #c4c4c4;
+        border: 2px solid #e6e6e6;
         border-radius: 0 0 15px 15px;
     }
 }

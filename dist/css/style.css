@@ -324,6 +324,25 @@ input {
   grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 
+.production-more-sec {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.production-more-sec-inner {
+  justify-content: flex-end;
+  display: flex;
+  width: 100%;
+}
+.production-more-sec-inner__img {
+  display: flex;
+  justify-content: flex-end;
+  width: 400px;
+  height: 300px;
+  background-color: #e6e6e6;
+  border-radius: 15px;
+}
+
 .news-sec {
   display: flex;
   flex-direction: column;
@@ -351,9 +370,6 @@ input {
   font-size: 22px;
   font-weight: 500;
 }
-.news__item-h :hover {
-  cursor: pointer;
-}
 .news__item-text {
   padding: 20px 0;
   font-size: 17px;
@@ -377,17 +393,61 @@ input {
   width: 100%;
 }
 
+.about-inner {
+  display: block;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+}
+.about-inner__text {
+  text-align: justify;
+  font-size: 21px;
+  color: #434955;
+  font-weight: 300;
+  line-height: 135%;
+}
+.about-inner__img {
+  float: right;
+  margin-left: 40px;
+  width: 500px;
+  height: 400px;
+  background-color: #e6e6e6;
+  border-radius: 15px;
+}
+.about-inner__owner {
+  font-size: 18px;
+  display: inline-block;
+  text-align: right;
+  width: 100%;
+}
+
+.about {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.about > .primary-text {
+  max-width: 900px;
+}
+
 .payment {
   display: flex;
   flex-direction: column;
 }
 .payment__text {
   width: 100%;
-  text-align: justify;
-  font-size: 21px;
+  text-align: left;
+  font-size: 18px;
   color: #434955;
   font-weight: 300;
   line-height: 145%;
+}
+.payment__text-bottom {
+  font-size: 21px;
+  margin-top: 20px;
 }
 
 .contacts-sec {
@@ -413,6 +473,27 @@ input {
 }
 .partners-sec span {
   margin-bottom: 15px;
+}
+
+.geo-sec {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.geo-sec__item {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+.geo-sec__text {
+  max-width: 900px;
+  text-align: center;
+  width: 800px;
+  font-size: 21px;
+  color: #434955;
+  font-weight: 300;
+  line-height: 145%;
+  width: 100%;
 }
 
 .price-sec {
@@ -521,6 +602,11 @@ input {
   transform: translateX(0);
 }
 
+#squoz {
+  transition: 0.2s ease;
+  color: white;
+}
+
 html {
   scroll-behavior: smooth;
   -webkit-overflow-scrolling: touch;
@@ -586,6 +672,13 @@ h3 {
   padding: 0px 0 40px;
   font-size: 24px;
   font-weight: 500;
+}
+
+h4 {
+  padding: 0px 0 20px;
+  font-size: 24px;
+  font-weight: 500;
+  color: #2575cf;
 }
 
 .link-text {
@@ -802,34 +895,6 @@ section {
   bottom: 30px;
 }
 
-.about-inner {
-  display: block;
-  flex-direction: row;
-  justify-content: space-between;
-  width: 100%;
-}
-.about-inner__text {
-  text-align: justify;
-  font-size: 21px;
-  color: #434955;
-  font-weight: 300;
-  line-height: 135%;
-}
-.about-inner__img {
-  float: right;
-  margin-left: 40px;
-  width: 500px;
-  height: 400px;
-  background-color: #c4c4c4;
-  border-radius: 15px;
-}
-.about-inner__owner {
-  display: inline-block;
-  text-align: right;
-  width: 100%;
-  white-space: nowrap;
-}
-
 .primary-text {
   width: 100%;
   font-size: 26px;
@@ -876,7 +941,7 @@ section {
 }
 .mom__item-img {
   display: flex;
-  background-color: #c4c4c4;
+  background-color: #e6e6e6;
   min-width: 500px;
   width: 200px;
   width: 100%;
@@ -898,18 +963,6 @@ section {
 }
 .advantages__item-text {
   margin-top: 20px;
-}
-
-.about {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-}
-
-.about > .primary-text {
-  max-width: 900px;
 }
 
 .advantages-inner {
@@ -935,7 +988,7 @@ section {
   min-height: 290px;
 }
 .production__item-image {
-  background-color: #c4c4c4;
+  background-color: #e6e6e6;
   border-radius: 15px 15px 0 0;
   height: 100%;
 }
@@ -957,7 +1010,7 @@ section {
   align-items: center;
   padding: 30px 20px;
   background-color: white;
-  border: 2px solid #c4c4c4;
+  border: 2px solid #e6e6e6;
   border-radius: 0 0 15px 15px;
 }
 
@@ -1287,6 +1340,10 @@ section {
   }
 }
 @media (max-width: 576px) {
+  .about-inner__owner {
+    text-align: center;
+  }
+
   .row {
     display: grid;
     gap: 26px;

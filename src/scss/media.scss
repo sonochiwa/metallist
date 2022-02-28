@@ -46,6 +46,7 @@
     .about-inner__img {
         display: none;
     }
+
     .news-row {
         display: grid;
         gap: 36px;
@@ -137,6 +138,9 @@
 
 //md content < 546 mobile
 @media (max-width: 576px) {
+    .about-inner__owner {
+        text-align: center;
+    }
     .row {
         display: grid;
         gap: 26px;
