@@ -1,0 +1,17 @@
+.partners-sec {
+    display: flex;
+    flex-direction: column;
+    &__text {
+        // max-width: 700px;
+        font-size: 21px;
+        color: $darkBlue;
+        font-weight: 300;
+        line-height: 145%;
+    }
+    & span {
+        margin-bottom: 15px;
+        // font-size: 23;
+
+      
+    }
+}

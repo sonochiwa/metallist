@@ -1,0 +1,13 @@
+.contacts-sec {
+    display: flex;
+    flex-direction: column;
+
+    &__text {
+
+        font-size: 21px;
+        color: $darkBlue;
+        font-weight: 300;
+        line-height: 185%;
+    
+    }
+}

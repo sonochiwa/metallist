@@ -43,6 +43,9 @@
 
 //lg content 960px tablet
 @media (max-width: 992px) {
+    .about-inner__img {
+        display: none;
+    }
     .news-row {
         display: grid;
         gap: 36px;
