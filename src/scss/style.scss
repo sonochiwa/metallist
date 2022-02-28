@@ -1,8 +1,9 @@
 //@import "bootstrap-grid.min";
+@import "bootstrap";
 @import "vars";
 @import "fonts";
 @import "reset";
-@import "bootstrap";
+
 @import "production";
 @import "news";
 @import "about";
@@ -25,6 +26,7 @@ html {
 }
 
 body {
+    outline: none;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -164,6 +166,8 @@ h4 {
     }
 }
 
+
+
 .menu__item:hover .dropdown {
     display: block;
 }
@@ -174,7 +178,7 @@ h4 {
     &__top {
         display: flex;
         justify-content: space-between;
-        height: 55px;
+        height: 75px;
         &-item {
             display: flex;
             align-items: center;
@@ -588,6 +592,8 @@ section {
     left: 50%;
     transform: translate(-50%, -50%);
 }
+
+
 
 @import "modal";
 @import "media";
