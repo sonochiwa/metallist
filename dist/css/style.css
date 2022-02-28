@@ -527,10 +527,6 @@ html {
   height: 100%;
 }
 
-main {
-  height: 100%;
-}
-
 body {
   display: flex;
   flex-direction: column;
@@ -1041,6 +1037,7 @@ section {
 }
 
 .footer-top {
+  display: flex;
   padding: 36px 0;
   background-color: #434955;
 }
