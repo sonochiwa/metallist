@@ -3,7 +3,6 @@
 @import "vars";
 @import "fonts";
 @import "reset";
-
 @import "production";
 @import "news";
 @import "about";
@@ -165,8 +164,6 @@ h4 {
         }
     }
 }
-
-
 
 .menu__item:hover .dropdown {
     display: block;
@@ -350,7 +347,7 @@ section {
     }
     position: relative;
     transform: rotate(-90deg);
-    top: 20px;
+    top: 40px;
     right: 10px;
 }
 
@@ -537,9 +534,9 @@ section {
         }
         &-item {
             color: #c4c4c4;
-            // margin-bottom: 15px;
-            // line-height: 20px;
             padding-top: 3px;
+            margin-bottom: 15px;
+            line-height: 23px;
             white-space: nowrap;
             a {
                 text-decoration: none;
@@ -592,8 +589,6 @@ section {
     left: 50%;
     transform: translate(-50%, -50%);
 }
-
-
 
 @import "modal";
 @import "media";
