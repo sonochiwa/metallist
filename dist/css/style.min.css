@@ -11393,13 +11393,6 @@ textarea.form-control-lg {
 @font-face {
   font-family: "Roboto";
   font-style: normal;
-  font-weight: 100;
-  font-display: swap;
-  src: url("../fonts/Roboto-Thin.woff2") format("woff2"), url("../fonts/Roboto-Thin.woff") format("woff");
-}
-@font-face {
-  font-family: "Roboto";
-  font-style: normal;
   font-weight: 300;
   font-display: swap;
   src: url("../fonts/Roboto-Light.woff2") format("woff2"), url("../fonts/Roboto-Light.woff") format("woff");
@@ -11417,13 +11410,6 @@ textarea.form-control-lg {
   font-weight: 500;
   font-display: swap;
   src: url("../fonts/Roboto-Medium.woff2") format("woff2"), url("../fonts/Roboto-Medium.woff") format("woff");
-}
-@font-face {
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 700;
-  font-display: swap;
-  src: url("../fonts/Roboto-Bold.woff2") format("woff2"), url("../fonts/Roboto-Bold.woff") format("woff");
 }
 *,
 *:before,
@@ -11757,9 +11743,8 @@ input {
   justify-content: center;
 }
 .price-sec__text {
-  max-width: 900px;
+  max-width: 950px;
   text-align: center;
-  width: 800px;
   font-size: 21px;
   color: #434955;
   font-weight: 300;
@@ -11857,14 +11842,43 @@ input {
   color: white;
 }
 
+iframe {
+  position: relative;
+  bottom: -3px;
+}
+
 html {
   scroll-behavior: smooth;
   -webkit-overflow-scrolling: touch;
   height: 100%;
 }
 
+a.active.focus,
+a.active:focus,
+a.focus,
+a:active.focus,
+a:active:focus,
+a:focus,
+button.active.focus,
+button.active:focus,
+button.focus,
+button:active.focus,
+button:active:focus,
+button:focus,
+.btn.active.focus,
+.btn.active:focus,
+.btn.focus,
+.btn:active.focus,
+.btn:active:focus,
+.btn:focus {
+  outline: 0 !important;
+  outline-color: transparent !important;
+  outline-width: 0 !important;
+  outline-style: none !important;
+  box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.883) !important;
+}
+
 body {
-  outline: none;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -11930,6 +11944,10 @@ h4 {
   font-size: 24px;
   font-weight: 500;
   color: #2575cf;
+}
+
+h6 {
+  display: none;
 }
 
 .link-text {
@@ -12017,11 +12035,11 @@ h4 {
   display: flex;
   align-items: center;
   color: #434955;
-  font-size: 24px;
+  font-size: 22px;
   font-weight: bold;
 }
 .header__top-item span {
-  font-size: 16px;
+  font-size: 17px;
   font-weight: normal;
 }
 .header__top-item a {
@@ -12352,7 +12370,7 @@ section {
 .footer-top__list-header {
   margin-bottom: 20px;
   font-size: 18px;
-  font-weight: bold;
+  font-weight: 500;
   color: white;
   white-space: nowrap;
 }
@@ -12382,12 +12400,6 @@ section {
 }
 .footer-info object {
   padding-right: 15px;
-}
-
-.mini-wrapper {
-  display: flex;
-  vertical-align: middle;
-  margin-bottom: 20px;
 }
 
 .footer-bottom {

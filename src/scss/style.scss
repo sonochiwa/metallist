@@ -1,4 +1,3 @@
-//@import "bootstrap-grid.min";
 @import "bootstrap";
 @import "vars";
 @import "fonts";
@@ -18,14 +17,42 @@
     color: rgb(255, 255, 255);
 }
 
+iframe {
+    position: relative;
+    bottom: -3px;
+}
+
 html {
     scroll-behavior: smooth;
     -webkit-overflow-scrolling: touch; //safari skroll
     height: 100%;
 }
+a.active.focus,
+a.active:focus,
+a.focus,
+a:active.focus,
+a:active:focus,
+a:focus,
+button.active.focus,
+button.active:focus,
+button.focus,
+button:active.focus,
+button:active:focus,
+button:focus,
+.btn.active.focus,
+.btn.active:focus,
+.btn.focus,
+.btn:active.focus,
+.btn:active:focus,
+.btn:focus {
+    outline: 0 !important;
+    outline-color: transparent !important;
+    outline-width: 0 !important;
+    outline-style: none !important;
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.883) !important;
+}
 
 body {
-    outline: none;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -58,8 +85,6 @@ a {
 
 .logo {
     position: fixed;
-    // left: 270px;
-    // top: 30px;
     left: 10px;
     top: 10px;
     & img {
@@ -93,8 +118,11 @@ h4 {
     padding: 0px 0 20px;
     font-size: 24px;
     font-weight: 500;
-    // text-align: center;
     color: #2575cf;
+}
+
+h6 {
+    display: none;
 }
 
 .link-text {
@@ -180,10 +208,10 @@ h4 {
             display: flex;
             align-items: center;
             color: $darkBlue;
-            font-size: 24px;
+            font-size: 22px;
             font-weight: bold;
             & span {
-                font-size: 16px;
+                font-size: 17px;
                 font-weight: normal;
             }
             & a {
@@ -208,7 +236,6 @@ h4 {
         cursor: pointer;
         background-color: $darkBlue;
         &_active {
-            // background: linear-gradient(282.03deg, #2c84eb 8.67%, #1b59a0 99.14%);
             box-shadow: 0px 0px 16px rgba(84, 160, 249, 0.5);
             background-color: $blue !important;
             z-index: 999;
@@ -228,11 +255,9 @@ h4 {
     }
     &__item:first-child {
         border-radius: 15px 0 0 15px;
-        // padding-left: 10px;
     }
     &__item:last-child {
         border-radius: 0 15px 15px 0;
-        // padding-right: 10px;
     }
 }
 
@@ -387,7 +412,6 @@ section {
 
 .advantages-inner {
     display: flex;
-    // padding: 0 140px;
     padding-top: 30px;
     justify-content: space-between;
 }
@@ -474,7 +498,6 @@ section {
                 display: flex;
                 justify-content: space-between;
                 margin-bottom: 20px;
-                // width: 100%;
             }
             & label {
                 width: 100%;
@@ -501,7 +524,6 @@ section {
             font-size: 18px;
             padding: 0 10px;
             height: 40px;
-            // width: 350px;
             border: 1px solid #b6b6b6;
             border-radius: 5px;
             margin-top: 5px;
@@ -518,7 +540,6 @@ section {
     display: flex;
 
     padding: 36px 0;
-    // height: 320px;
     background-color: $darkBlue;
 }
 
@@ -528,7 +549,7 @@ section {
         &-header {
             margin-bottom: 20px;
             font-size: 18px;
-            font-weight: bold;
+            font-weight: 500;
             color: white;
             white-space: nowrap;
         }
@@ -560,12 +581,6 @@ section {
     & object {
         padding-right: 15px;
     }
-}
-
-.mini-wrapper {
-    display: flex;
-    vertical-align: middle;
-    margin-bottom: 20px;
 }
 
 .footer-bottom {
