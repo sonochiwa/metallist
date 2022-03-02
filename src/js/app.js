@@ -2,10 +2,7 @@ import * as flsFunctions from './modules/functions.js'
 
 flsFunctions.isWebp()
 
-import Swiper, { Navigation, Pagination } from 'swiper'
-
-const swiper = new Swiper()
-
 import './modules/burger.js'
 import './modules/bootstrap.js'
 import './modules/modal.js'
+import './modules/slider.js'

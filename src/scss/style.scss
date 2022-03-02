@@ -11,16 +11,17 @@
 @import "geo";
 @import "price";
 @import "burger";
+@import "slider";
 
 #squoz {
     transition: 0.2s ease;
     color: rgb(255, 255, 255);
 }
 
-iframe {
-    position: relative;
-    bottom: -3px;
-}
+// iframe {
+//     position: relative;
+//     bottom: -3px;
+// }
 
 html {
     scroll-behavior: smooth;
@@ -69,6 +70,7 @@ body {
 a {
     text-decoration: none;
     color: inherit;
+    cursor: pointer;
 }
 
 //xxl
@@ -316,7 +318,7 @@ section {
     padding: 10px 0 40px;
 }
 
-.slider {
+.banner {
     display: flex;
     position: relative;
     background-color: #c4c4c4;
