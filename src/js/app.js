@@ -1,8 +1,5 @@
-import * as flsFunctions from './modules/functions.js'
+import * as flsFunctions from "./modules/functions.js";
 
-flsFunctions.isWebp()
+flsFunctions.isWebp();
 
-import './modules/burger.js'
-import './modules/bootstrap.js'
-import './modules/modal.js'
-import './modules/slider.js'
+// import "./modules/script.js";
